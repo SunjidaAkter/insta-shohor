@@ -254,21 +254,36 @@ img {
 .blue{
   color: rgb(112, 162, 236);
 }
+
+/* responsive-issues */
 .m-response{
   flex-wrap: nowrap;
 }
 .width{
   width: 50%;
 }
+.height{
+  height: 638.25px;
+}
+
+/* liked-post */
 #likes{
   display: none;
 }
+
+/* reported-post */
 #reports{
   display: none;
 }
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .m-response{
+    flex-wrap: wrap;
+  }
+  .height{
+    height: 100%;
   }
   
 }
@@ -281,5 +296,9 @@ img {
   }
   .width{
     width: 100%;
+  }
+  
+  .height{
+    height: 100%;
   }
 }
